@@ -14,7 +14,6 @@ function start(){
     sum=0
     hello =true
 }
-let int =1
 
 function save(){
     if(hello){
@@ -28,11 +27,11 @@ function save(){
             main.textContent="You won the game"        
         }
         else{
-            if(int===1){
+            if(hello){
                 main.textContent="You are out of the game"
                 card.textContent+=number+" - "
                 sumCards.textContent="Sum: "+sum
-                int++
+                hello=false
             }
             return
         }
